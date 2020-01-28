@@ -12,7 +12,7 @@ const Series = () => {
         setIsFetchingSeries(true);
         setError(null);
         axios
-              .post(`http://localhost:5000/task/fibonacci-series`, {
+              .post(`http://45.33.74.140:5000/task/fibonacci-series`, {
                 length: values.number,
                 prime_only: values.prime
               })
