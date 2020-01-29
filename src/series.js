@@ -35,7 +35,7 @@ const Series = () => {
                 <form className="series-form" onSubmit={props.handleSubmit}>
                     <div className="form-group">
                         <label>Tell me till how many numbers you need in the series</label>
-                        <input type="number" className="form-control" name="number" required onChange={props.handleChange} value={props.values.number}/>
+                        <input type="number" className="form-control" name="number" min="1" required onChange={props.handleChange} value={props.values.number}/>
                     </div>
                     <div className="form-group form-check">
                         <input type="checkbox" className="form-check-input" name="prime" onChange={props.handleChange} value={props.values.prime}/>
