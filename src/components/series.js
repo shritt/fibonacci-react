@@ -1,7 +1,7 @@
 import React, {useState, Fragment} from 'react';
 import { Formik } from 'formik';
 import axios from 'axios';
-import './App.css';
+import './styles/index.css';
 
 const Series = () => {
     const [series, setSeries] = useState([]);
@@ -35,7 +35,7 @@ const Series = () => {
                 <form className="series-form" onSubmit={props.handleSubmit}>
                     <div className="form-group">
                         <label>Tell me till how many numbers you need in the series</label>
-                        <input type="number" className="form-control" name="number" min="1" required onChange={props.handleChange} value={props.values.number}/>
+                        <input type="number" className="form-control" name="number" min="1" aria-label="number-input" required onChange={props.handleChange} value={props.values.number}/>
                     </div>
                     <div className="form-group form-check">
                         <input type="checkbox" className="form-check-input" name="prime" onChange={props.handleChange} value={props.values.prime}/>

@@ -1,5 +1,5 @@
 import React from 'react';
-import Series from './series';
+import Series from './components/series';
 import './App.css';
 
 function App() {
