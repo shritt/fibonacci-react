@@ -46,7 +46,7 @@ const Series = () => {
                 </form>
             )}
             </Formik> 
-            <div className="row series-wrap mt-5">
+            <div className="series-wrap mt-5">
             {error && <small className="danger">{error}</small>}
                 {series.length > 0 && series.map((number) => <div className="series-item col">{number}</div>)}
             </div>
